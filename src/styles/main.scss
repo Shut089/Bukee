@@ -6,21 +6,37 @@
 @import "base/general";
 @import "../blocks/modules";
 
+$light-color: #fff;
+$accent-color: #65e496;
+
 
 body {
     font-family: 'Roboto Slab', serif;
+}
+small {
+    font-family: 'Open Sans', serif;
+    font-style: italic;
 }
 
 .page-main {
     background-image: url(..//img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    color: $light-color;
+    padding-bottom: 160px;
 }
-
+.wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 181px;
 
     &__logo {
         display: block;
@@ -32,8 +48,83 @@ body {
         list-style-type: none;
         display: flex;
         justify-content: flex-end;
+        font-family: 'Open Sans', serif;
         &__item {
             margin-left: 15px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s;
+            &:hover {
+                border-bottom: 3px solid $accent-color;
+            }
         }
+        &__item.active {
+            border-bottom: 3px solid $accent-color;
+        
+        }
+        &__link {
+            color: $light-color;
+            text-decoration: none;
+            letter-spacing: 1.47px;
+        }
+    }
+
+}
+.blok-text{
+    max-width: 670px;
+    &__name {
+        font-family: 'Open Sans', serif;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        margin-bottom: 31px;
+        margin-top: 0px;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        margin-bottom: 40px;
+        span {
+            display:block;
+            font-size: 18px;
+            color: $accent-color;
+            margin-top: 9px;
+            letter-spacing: 0.9px;
+        }
+    }
+    &__description {
+        font-family: 'Open Sans', serif;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.7px;
+        margin-bottom: 50px;
+    }
+    &__btn {
+        display: block;
+        background-color: $accent-color;
+        color: $light-color;
+        text-decoration: none;
+        max-width: 250px;
+        text-align: center;
+        border-radius: 3px;
+        font-size: 18px;
+        margin-top: 48px;
+        padding: 14px 0;
+        letter-spacing: 0.7px;
+        margin-bottom: 16px;
+    }
+   
+}
+.blok-book {
+    display: flex;
+    justify-content: space-between;
+
+    &-demo {
+        display: block;
+        width: 445px;
+        height: 639px;
+        background-image: url(../img/book.svg);
+        background-repeat: no-repeat;
+        // flex-basis: 445px;
     }
 }

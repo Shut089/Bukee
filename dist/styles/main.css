@@ -400,16 +400,32 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 
+small {
+  font-family: 'Open Sans', serif;
+  font-style: italic;
+}
+
 .page-main {
   background-image: url(..//img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+  padding-bottom: 160px;
+}
+
+.wrap {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 181px;
 }
 
 .header__logo {
@@ -423,10 +439,91 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  font-family: 'Open Sans', serif;
 }
 
 .header-list__item {
   margin-left: 15px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.header-list__item:hover {
+  border-bottom: 3px solid #65e496;
+}
+
+.header-list__item.active {
+  border-bottom: 3px solid #65e496;
+}
+
+.header-list__link {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1.47px;
+}
+
+.blok-text {
+  max-width: 670px;
+}
+
+.blok-text__name {
+  font-family: 'Open Sans', serif;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  margin-bottom: 31px;
+  margin-top: 0px;
+}
+
+.blok-text__title {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 40px;
+}
+
+.blok-text__title span {
+  display: block;
+  font-size: 18px;
+  color: #65e496;
+  margin-top: 9px;
+  letter-spacing: 0.9px;
+}
+
+.blok-text__description {
+  font-family: 'Open Sans', serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  margin-bottom: 50px;
+}
+
+.blok-text__btn {
+  display: block;
+  background-color: #65e496;
+  color: #fff;
+  text-decoration: none;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-top: 48px;
+  padding: 14px 0;
+  letter-spacing: 0.7px;
+  margin-bottom: 16px;
+}
+
+.blok-book {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blok-book-demo {
+  display: block;
+  width: 445px;
+  height: 639px;
+  background-image: url(../img/book.svg);
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 36rem) {
