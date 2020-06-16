@@ -23,7 +23,7 @@ small {
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
-    padding-bottom: 160px;
+    padding-bottom: 162px;
 }
 .wrap {
     max-width: 1170px;
@@ -54,6 +54,7 @@ small {
             padding-bottom: 5px;
             border-bottom: 3px solid transparent;
             transition: 0.3s;
+            padding-top: 5px;
             &:hover {
                 border-bottom: 3px solid $accent-color;
             }
@@ -97,7 +98,8 @@ small {
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 0.7px;
-        margin-bottom: 50px;
+        margin-bottom: 24px;
+        margin-right: 100px;
     }
     &__btn {
         display: block;

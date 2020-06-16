@@ -410,7 +410,7 @@ small {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding-bottom: 160px;
+  padding-bottom: 162px;
 }
 
 .wrap {
@@ -447,6 +447,7 @@ small {
   padding-bottom: 5px;
   border-bottom: 3px solid transparent;
   transition: 0.3s;
+  padding-top: 5px;
 }
 
 .header-list__item:hover {
@@ -495,7 +496,8 @@ small {
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.7px;
-  margin-bottom: 50px;
+  margin-bottom: 24px;
+  margin-right: 100px;
 }
 
 .blok-text__btn {
