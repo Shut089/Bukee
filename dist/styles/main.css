@@ -498,6 +498,7 @@ small {
   letter-spacing: 0.7px;
   margin-bottom: 24px;
   margin-right: 100px;
+  color: #696980;
 }
 
 .blok-text__btn {
@@ -550,6 +551,24 @@ small {
 .blok-ava__img {
   margin-top: 45px;
   margin-right: 45px;
+}
+
+.blok-counter {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 162px;
+}
+
+.blok-counter p {
+  font-size: 18px;
+  color: #696980;
+}
+
+.blok-counter span {
+  font-size: 80px;
+  font-weight: 100;
+  color: #65e496;
 }
 
 @media screen and (min-width: 36rem) {
