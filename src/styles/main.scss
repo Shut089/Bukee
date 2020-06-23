@@ -77,8 +77,8 @@ small {
         font-family: 'Open Sans', serif;
         font-size: 18px;
         letter-spacing: 0.7px;
-        margin-bottom: 31px;
-        margin-top: 0px;
+        margin-bottom: 21px;
+        margin-top: 13px;
     }
     &__title {
         font-size: 48px;
@@ -106,7 +106,7 @@ small {
         background-color: $accent-color;
         color: $light-color;
         text-decoration: none;
-        max-width: 250px;
+        max-width: 238px;
         text-align: center;
         border-radius: 3px;
         font-size: 18px;
@@ -128,5 +128,25 @@ small {
         background-image: url(../img/book.svg);
         background-repeat: no-repeat;
         // flex-basis: 445px;
+    }
+}
+.page {
+    padding-top: 160px;
+}
+.blok-author {
+    display: flex;
+    justify-content: space-between;
+}
+.blok-ava {
+    position: relative;
+    
+    &__svg {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+    }
+    &__img {
+        margin-top: 45px;
+        margin-right: 45px;
     }
 }
