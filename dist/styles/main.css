@@ -501,6 +501,10 @@ small {
   color: #696980;
 }
 
+.blok-text__wihte {
+  color: #fff;
+}
+
 .blok-text__btn {
   display: block;
   background-color: #65e496;
