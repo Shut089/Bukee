@@ -159,10 +159,14 @@ small {
     p {
         font-size: 18px;
         color: #696980;
+        font-family: 'Open Sans', serif;
     }
-    span {
-        font-size: 80px;
-        font-weight: 100;
-        color: $accent-color;
-    }
+        span {
+            display: block;
+            font-family: 'Roboto Slab', serif;
+            font-size: 80px;
+            font-weight: 100;
+            color: $accent-color;
+            margin-bottom: 12px;
+        }
 }
