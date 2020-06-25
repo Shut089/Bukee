@@ -229,9 +229,13 @@ h3 {
         &__linklogo {
             display: flex;
             justify-content: flex-start;
-            i {
+            li {
+                list-style-type: none;
+            }
+            img {
                 width: 20px;
-                height: 23px;
+                height: 20px;
+                color: $accent-color;
             }
         }
     }

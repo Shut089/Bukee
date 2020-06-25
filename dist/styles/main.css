@@ -648,9 +648,14 @@ h3 {
   justify-content: flex-start;
 }
 
-.blok-about-text__linklogo i {
+.blok-about-text__linklogo li {
+  list-style-type: none;
+}
+
+.blok-about-text__linklogo img {
   width: 20px;
-  height: 23px;
+  height: 20px;
+  color: #65e496;
 }
 
 .blok-about-table {
