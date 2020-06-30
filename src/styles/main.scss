@@ -221,22 +221,33 @@ h3 {
         flex-basis: 41%;
         &__social {
             display: flex;
+            align-items: center;
             p {
                 font-size: 18px;
                 font-weight: 700;
+                margin-top: 13px;
+                letter-spacing: 1.3px;
             }
         }
         &__linklogo {
-            display: flex;
-            justify-content: flex-start;
-            li {
-                list-style-type: none;
+            list-style-type: none;
+            padding-left: 13px;
+            vertical-align: middle;
+            &>li {
+                display: inline-block;
+                font-size: 18px;
+                padding-left: 12px;
+                &>a {
+                    color: $accent-color;
+                }
             }
-            img {
-                width: 20px;
-                height: 20px;
-                color: $accent-color;
-            }
+        }
+        &__desc {
+            color: #696980;
+        }
+        &__tittle {
+            font-size: 18px;
+            font-weight: 700;
         }
     }
     &-table {
@@ -264,6 +275,7 @@ h3 {
             column-count: 2;
             letter-spacing: 0.2px;
             margin-top: 24px;
+            color: #696980;
             &>li {
                 position: relative;
                 padding-left: 35px;
@@ -279,7 +291,7 @@ h3 {
                     left: 0;
                     font-family: 'Open Sans', serif;
                     font-size: 15px;
-                    background-color: $accent-color;
+                    background-color: #5fc9b6;
                     color: $bg-light-color;
                     padding: 0px 7px;
                     top: 1px;
